@@ -7,4 +7,4 @@ ENDIF (ITK_FOUND )
 
 ADD_EXECUTABLE(VascuSynth VascuSynth.cpp SupplyMap.cpp OxygenationMap.cpp NodeTable.cpp VascularTree.cpp TreeDrawer.cpp)
 
-TARGET_LINK_LIBRARIES( VascuSynth ITKCommon ITKIO)
+TARGET_LINK_LIBRARIES( VascuSynth ${ITK_LIBRARIES})
